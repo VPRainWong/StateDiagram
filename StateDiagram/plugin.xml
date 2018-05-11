@@ -1,0 +1,28 @@
+<plugin
+		id="com.vp.plugin.sample.statediagram"
+		description="Create State Diagram via Open API"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.statediagram.StateDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.statediagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.statediagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.statediagram.actionset1.StateDiagramActionControl"
+					actionType="generalAction"
+					label="Create State Diagram"
+					tooltip="Create State Diagram via Open API"
+					style="normal"
+          icon="icons/state.png"
+					toolbarPath="com.vp.plugin.sample.statediagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.statediagram.actions.StateDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+		
+	</actionSets>	
+</plugin>
